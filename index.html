@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Scan Bandung - Solusi Digitalisasi Dokumen Profesional</title>
+    <meta name="description" content="Jasa Scan Bandung menyediakan layanan scan dokumen, foto, buku, dan gambar ukuran besar dengan cepat, berkualitas tinggi, dan harga terjangkau.">
+    <meta name="keywords" content="jasa scan bandung, scan dokumen bandung, digitalisasi dokumen, scan foto, scan buku, scan A3 A2 A1 A0 bandung">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            /* Updated placeholder to remove all text, plain background color */
+            background-image: url('https://placehold.co/1920x1080/e9eff5/'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .stagger-animation > * {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .stagger-animation.is-visible > * {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Stagger delay for children */
+        .stagger-animation.is-visible > *:nth-child(1) { transition-delay: 0.1s; }
+        .stagger-animation.is-visible > *:nth-child(2) { transition-delay: 0.2s; }
+        .stagger-animation.is-visible > *:nth-child(3) { transition-delay: 0.3s; }
+        .stagger-animation.is-visible > *:nth-child(4) { transition-delay: 0.4s; }
+        .stagger-animation.is-visible > *:nth-child(5) { transition-delay: 0.5s; }
+        .stagger-animation.is-visible > *:nth-child(6) { transition-delay: 0.6s; }
+
+        #header {
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        #header.scrolled {
+            background-color: rgba(255, 255, 255, 0.85); /* More opaque white with blur */
+            backdrop-filter: blur(12px);
+            box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.1), 0 3px 7px -3px rgba(0, 0, 0, 0.08);
+        }
+        .smooth-underline {
+            position: relative;
+            text-decoration: none;
+        }
+        .smooth-underline::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px; /* Adjusted for slightly more space */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #1d4ed8; /* blue-700 for a bit darker underline */
+            transition: width 0.3s ease-in-out;
+        }
+        .smooth-underline:hover::after,
+        .smooth-underline.active::after { 
+            width: 100%;
+        }
+        .btn-gradient {
+            background-image: linear-gradient(to right, #3b82f6, #2563eb);
+        }
+        .btn-gradient:hover {
+            background-image: linear-gradient(to right, #2563eb, #1d4ed8);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased">
+
+    <header id="header" class="bg-white/70 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-xl sm:text-2xl font-extrabold text-blue-600 hover:text-blue-700 transition-colors">
+                        JASA SCAN BANDUNG
+                    </a>
+                </div>
+                <nav class="hidden md:flex md:items-center md:space-x-10">
+                    <a href="#layanan" class="text-gray-700 hover:text-blue-700 font-medium transition-colors smooth-underline">Layanan</a>
+                    <a href="#mengapa-kami" class="text-gray-700 hover:text-blue-700 font-medium transition-colors smooth-underline">Mengapa Kami</a>
+                    <a href="#cara-kerja" class="text-gray-700 hover:text-blue-700 font-medium transition-colors smooth-underline">Cara Kerja</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-blue-700 font-medium transition-colors smooth-underline">Kontak</a>
+                </nav>
+                <div class="hidden md:block">
+                    <a href="#kontak" class="btn-gradient text-white font-semibold px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:scale-105 duration-300">Hubungi Kami</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-800 focus:outline-none p-2 rounded-md hover:bg-slate-200 transition-colors">
+                        <span class="sr-only">Buka menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl border-t border-slate-200">
+            <a href="#layanan" class="block py-3 px-5 text-base text-gray-700 hover:bg-slate-100 hover:text-blue-600 transition-colors font-medium">Layanan</a>
+            <a href="#mengapa-kami" class="block py-3 px-5 text-base text-gray-700 hover:bg-slate-100 hover:text-blue-600 transition-colors font-medium">Mengapa Kami</a>
+            <a href="#cara-kerja" class="block py-3 px-5 text-base text-gray-700 hover:bg-slate-100 hover:text-blue-600 transition-colors font-medium">Cara Kerja</a>
+            <a href="#kontak" class="block py-3 px-5 text-base text-gray-700 hover:bg-slate-100 hover:text-blue-600 transition-colors font-medium">Kontak</a>
+            <div class="p-4 border-t border-slate-200">
+                 <a href="#kontak" class="w-full text-center block btn-gradient text-white font-semibold px-4 py-3 rounded-lg hover:opacity-90 transition-opacity">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="relative hero-bg overflow-hidden">
+            <div class="absolute inset-0 bg-white/80"></div> 
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36 lg:py-48 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight fade-in-up" style="animation-delay: 0.1s;">
+                    Solusi Scan Dokumen Cepat & Berkualitas di Bandung
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-700 fade-in-up" style="animation-delay: 0.3s;">
+                    Kami menyediakan layanan scan profesional untuk berbagai jenis dokumen, foto, buku, dan lainnya dengan hasil terbaik dan harga terjangkau.
+                </p>
+                <div class="mt-10 fade-in-up" style="animation-delay: 0.5s;">
+                    <a href="#kontak" class="btn-gradient text-white font-bold px-8 py-4 rounded-lg text-lg hover:opacity-90 transition-opacity transform hover:scale-105 duration-300 shadow-xl hover:shadow-2xl">
+                        Dapatkan Penawaran
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="layanan" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 fade-in-up">Layanan Profesional Kami</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 fade-in-up" style="animation-delay: 0.2s;">Kami siap membantu Anda mendigitalisasikan berbagai jenis materi fisik menjadi format digital berkualitas tinggi.</p>
+                </div>
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform">
+                        <div class="text-5xl text-blue-600 mb-5">📄</div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">Scan Dokumen</h3>
+                        <p class="text-slate-600">KTP, Ijazah, Sertifikat, Akta, dll. Resolusi tinggi, format PDF/JPEG.</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform">
+                        <div class="text-5xl text-blue-600 mb-5">🖼️</div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">Scan Foto & Album</h3>
+                        <p class="text-slate-600">Abadikan kenangan foto lama, album, klise dengan detail warna tajam.</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform">
+                        <div class="text-5xl text-blue-600 mb-5">📚</div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">Scan Buku & Majalah</h3>
+                        <p class="text-slate-600">Konversi koleksi buku atau majalah menjadi e-book praktis tanpa merusak.</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform">
+                        <div class="text-5xl text-blue-600 mb-5">📐</div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">Scan Ukuran Besar</h3>
+                        <p class="text-slate-600">Peta, Blueprint, Poster (A3/A2/A1/A0) untuk arsitek dan desainer.</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform">
+                        <div class="text-5xl text-blue-600 mb-5">💾</div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">Pengarsipan Digital</h3>
+                        <p class="text-slate-600">Merapikan hasil scan, penamaan file terstruktur, simpan ke berbagai media.</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform">
+                        <div class="text-5xl text-blue-600 mb-5">✨</div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">Layanan Tambahan</h3>
+                        <p class="text-slate-600">OCR (pengenalan teks), edit minor hasil scan. Diskusikan kebutuhan Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mengapa-kami" class="py-16 md:py-24 bg-slate-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 fade-in-up">Kenapa Harus JASA SCAN BANDUNG?</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 fade-in-up" style="animation-delay: 0.2s;">Kami berkomitmen memberikan layanan terbaik dengan hasil yang memuaskan dan terpercaya.</p>
+                </div>
+                <div class="grid gap-x-8 gap-y-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 stagger-animation">
+                     <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-5xl mb-4 text-blue-500">🏆</div>
+                        <h3 class="text-xl font-semibold text-slate-900">Kualitas Terbaik</h3>
+                        <p class="mt-2 text-slate-600">Scanner modern untuk hasil jernih, tajam, dan detail.</p>
+                    </div>
+                     <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-5xl mb-4 text-blue-500">🚀</div>
+                        <h3 class="text-xl font-semibold text-slate-900">Proses Cepat</h3>
+                        <p class="mt-2 text-slate-600">Layanan cepat dan efisien tanpa kompromi kualitas.</p>
+                    </div>
+                     <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-5xl mb-4 text-blue-500">💰</div>
+                        <h3 class="text-xl font-semibold text-slate-900">Harga Terjangkau</h3>
+                        <p class="mt-2 text-slate-600">Solusi scan hemat untuk perorangan, pelajar, hingga bisnis.</p>
+                    </div>
+                     <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-5xl mb-4 text-blue-500">🔒</div>
+                        <h3 class="text-xl font-semibold text-slate-900">Kerahasiaan Terjamin</h3>
+                        <p class="mt-2 text-slate-600">Keamanan dan kerahasiaan penuh untuk setiap dokumen Anda.</p>
+                    </div>
+                     <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-5xl mb-4 text-blue-500">🤝</div>
+                        <h3 class="text-xl font-semibold text-slate-900">Tim Profesional</h3>
+                        <p class="mt-2 text-slate-600">Staf ramah, berpengalaman, dan siap membantu kebutuhan Anda.</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-5xl mb-4 text-blue-500">🚚</div>
+                        <h3 class="text-xl font-semibold text-slate-900">Layanan Antar-Jemput</h3>
+                        <p class="mt-2 text-slate-600">Tidak sempat datang? Kami sediakan antar-jemput dokumen (S&K berlaku).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cara-kerja" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 fade-in-up">Proses Layanan yang Mudah</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 fade-in-up" style="animation-delay: 0.2s;">Kami merancang proses layanan yang simpel dan transparan agar Anda mendapatkan hasil scan dengan mudah.</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-16 md:gap-y-12">
+                        <div class="hidden md:block absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-1 bg-blue-100 rounded-full" aria-hidden="true"></div>
+                        
+                        <div class="relative fade-in-up md:col-start-1 md:text-right md:pr-8">
+                            <div class="md:absolute md:right-full md:mr-[-29px] md:top-1/2 md:transform md:-translate-y-1/2">
+                                <div class="flex items-center justify-center w-14 h-14 bg-blue-600 text-white font-bold rounded-full text-2xl shadow-md">1</div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 mt-4 md:mt-0">Hubungi Kami</h3>
+                            <p class="text-slate-600 mt-2">Kontak via WhatsApp/Email untuk konsultasi awal kebutuhan scan Anda.</p>
+                        </div>
+
+                        <div class="relative fade-in-up md:col-start-2 md:text-left md:pl-8">
+                             <div class="md:absolute md:left-full md:ml-[-29px] md:top-1/2 md:transform md:-translate-y-1/2">
+                                <div class="flex items-center justify-center w-14 h-14 bg-blue-600 text-white font-bold rounded-full text-2xl shadow-md">2</div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 mt-4 md:mt-0">Antar/Jemput Dokumen</h3>
+                            <p class="text-slate-600 mt-2">Antar dokumen ke lokasi kami, atau manfaatkan layanan antar-jemput.</p>
+                        </div>
+
+                        <div class="relative fade-in-up md:col-start-1 md:text-right md:pr-8">
+                            <div class="md:absolute md:right-full md:mr-[-29px] md:top-1/2 md:transform md:-translate-y-1/2">
+                                <div class="flex items-center justify-center w-14 h-14 bg-blue-600 text-white font-bold rounded-full text-2xl shadow-md">3</div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 mt-4 md:mt-0">Proses Scanning</h3>
+                            <p class="text-slate-600 mt-2">Tim kami memproses scan dokumen Anda dengan teliti sesuai standar kualitas.</p>
+                        </div>
+
+                        <div class="relative fade-in-up md:col-start-2 md:text-left md:pl-8">
+                            <div class="md:absolute md:left-full md:ml-[-29px] md:top-1/2 md:transform md:-translate-y-1/2">
+                               <div class="flex items-center justify-center w-14 h-14 bg-blue-600 text-white font-bold rounded-full text-2xl shadow-md">4</div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 mt-4 md:mt-0">Pengiriman Hasil</h3>
+                            <p class="text-slate-600 mt-2">Hasil scan dikirim cepat via Email/Cloud Storage dalam format digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimoni" class="py-16 md:py-24 bg-slate-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 fade-in-up">Apa Kata Pelanggan Kami</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 fade-in-up" style="animation-delay: 0.2s;">Kepuasan pelanggan adalah prioritas utama kami. Berikut beberapa pendapat mereka.</p>
+                </div>
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
+                    <div class="bg-white p-8 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-center mb-4">
+                            <span class="text-yellow-400 text-xl">★★★★★</span>
+                        </div>
+                        <blockquote class="text-slate-700 italic text-lg leading-relaxed">"Pekerjaannya cepat dan hasilnya sangat memuaskan. Dokumen lama jadi rapi tersimpan digital. Recommended!"</blockquote>
+                        <p class="mt-6 font-semibold text-slate-800 text-md">- Budi Santoso, Dosen</p>
+                    </div>
+                    <div class
